@@ -56,7 +56,7 @@ export default function ReadAloudButton(props: Props) {
 
     const utterance = new SpeechSynthesisUtterance(props.text);
     utterance.voice = voices()[selectedVoiceIndex()] ?? null;
-    utterance.rate = 0.9;
+    utterance.rate = 0.95;
     utterance.pitch = 1.0;
     utterance.onend = () => setSpeaking(false);
     utterance.onerror = () => setSpeaking(false);

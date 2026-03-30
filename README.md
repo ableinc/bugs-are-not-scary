@@ -12,6 +12,12 @@ An interactive picture-book web app for young children to learn about bugs in a 
 - **Dark mode** — toggleable, persisted to `localStorage`
 - **Responsive layout** — works on desktop, tablet, and mobile
 
+## Share with your kids
+
+You can use this app now by visiting: [jaylendouglas.com/bugs-are-not-scary](https://jaylendouglas.com/bugs-are-not-scary)
+
+> If your kids like this and you want to add more bugs, send me an email: [hello@jaylendouglas.com](mailto:hello@jaylendouglas.com)
+
 ## Tech Stack
 
 | | |
