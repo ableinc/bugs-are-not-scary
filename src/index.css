@@ -1,0 +1,189 @@
+/* ===== Google Font Import ===== */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap");
+
+/* ===== CSS Reset & Base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Theme Variables ===== */
+:root {
+  --bg: #fef9f0;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fff7eb;
+  --text: #3d2c1e;
+  --text-muted: #7a6555;
+  --accent: #ff8c42;
+  --accent-light: #ffd6b0;
+  --accent-dark: #e06a1e;
+  --success: #4caf50;
+  --success-light: #c8e6c9;
+  --danger: #ef5350;
+  --danger-light: #ffcdd2;
+  --border: #e8ddd0;
+  --shadow: rgba(61, 44, 30, 0.08);
+  --shadow-hover: rgba(61, 44, 30, 0.16);
+  --overlay: rgba(61, 44, 30, 0.5);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 24px;
+  --transition: 0.3s ease;
+
+  --font-family: "Fredoka", "Nunito", system-ui, -apple-system, sans-serif;
+  --font-size-base: 20px;
+  --font-size-sm: 16px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-2xl: 42px;
+  --font-size-3xl: 56px;
+  --line-height: 1.6;
+}
+
+[data-theme="dark"] {
+  --bg: #1a1520;
+  --bg-card: #2a2235;
+  --bg-card-hover: #352d42;
+  --text: #f0e6d6;
+  --text-muted: #b8a898;
+  --accent: #ffaa66;
+  --accent-light: #4a3520;
+  --accent-dark: #ffcc99;
+  --success: #66bb6a;
+  --success-light: #1b3d1c;
+  --danger: #ef5350;
+  --danger-light: #3d1b1b;
+  --border: #3d3348;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow-hover: rgba(0, 0, 0, 0.35);
+  --overlay: rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Base Styles ===== */
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: var(--line-height);
+  min-height: 100dvh;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+button {
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1.25rem;
+  transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 18px;
+    --font-size-xl: 26px;
+    --font-size-2xl: 34px;
+    --font-size-3xl: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-base: 16px;
+    --font-size-xl: 22px;
+    --font-size-2xl: 28px;
+    --font-size-3xl: 34px;
+  }
+}
