@@ -317,7 +317,11 @@ export const bugs: BugInfo[] = [
     ],
     quizQuestion: {
       question: 'How do crickets make their chirping sound?',
-      options: ['They clap their legs', 'They rub their wings together', 'They vibrate their belly'],
+      options: [
+        'They clap their legs',
+        'They rub their wings together',
+        'They vibrate their belly',
+      ],
       correctIndex: 1,
     },
   },
@@ -328,7 +332,7 @@ export const bugs: BugInfo[] = [
     color: '#607d8b',
     tagline: 'A tiny flyer with a very loud buzz!',
     description:
-      "Mosquitoes are tiny flying insects known for their high-pitched buzz. Only female mosquitoes bite — they need a tiny bit of blood to lay their eggs. Male mosquitoes are completely harmless and only drink flower nectar!",
+      'Mosquitoes are tiny flying insects known for their high-pitched buzz. Only female mosquitoes bite — they need a tiny bit of blood to lay their eggs. Male mosquitoes are completely harmless and only drink flower nectar!',
     habitat:
       'Mosquitoes live near standing water like ponds, puddles, and marshes because they lay their eggs on the water surface. They are found on every continent except Antarctica!',
     diet: 'Male mosquitoes drink flower nectar, just like bees. Female mosquitoes drink nectar too, but also need a small amount of blood to produce their eggs.',
@@ -351,7 +355,7 @@ export const bugs: BugInfo[] = [
     color: '#4e342e',
     tagline: 'One of the toughest survivors on Earth!',
     description:
-      "Cockroaches are ancient insects that have been around for over 300 million years — even before the dinosaurs! They are incredibly tough survivors. Despite their creepy reputation, most cockroaches live outdoors and are important recyclers in nature.",
+      'Cockroaches are ancient insects that have been around for over 300 million years — even before the dinosaurs! They are incredibly tough survivors. Despite their creepy reputation, most cockroaches live outdoors and are important recyclers in nature.',
     habitat:
       'Wild cockroaches live in forests, caves, and under logs and rocks. They love warm, dark, moist places. There are about 4,500 different species, but only a handful ever come indoors.',
     diet: 'Cockroaches eat almost anything — dead leaves, wood, fruit, and decaying plant matter. In nature they are important decomposers, breaking down rotting material and returning nutrients to the soil.',
