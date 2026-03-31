@@ -17,8 +17,22 @@ export default function EarwigSvg() {
       `}</style>
       <g class="earwig-g">
         {/* Pincers (cerci) */}
-        <path class="earwig-pincer-l" d="M92 172 Q78 190 82 198 Q88 196 92 185" fill="none" stroke="#5d4037" stroke-width="3" stroke-linecap="round" />
-        <path class="earwig-pincer-r" d="M108 172 Q122 190 118 198 Q112 196 108 185" fill="none" stroke="#5d4037" stroke-width="3" stroke-linecap="round" />
+        <path
+          class="earwig-pincer-l"
+          d="M92 172 Q78 190 82 198 Q88 196 92 185"
+          fill="none"
+          stroke="#5d4037"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+        <path
+          class="earwig-pincer-r"
+          d="M108 172 Q122 190 118 198 Q112 196 108 185"
+          fill="none"
+          stroke="#5d4037"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
         {/* Abdomen segments */}
         <ellipse cx="100" cy="162" rx="14" ry="10" fill="#795548" />
         <ellipse cx="100" cy="148" rx="15" ry="10" fill="#6d4c41" />
@@ -40,25 +54,139 @@ export default function EarwigSvg() {
         <circle cx="92" cy="66" r="1.2" fill="white" />
         <circle cx="112" cy="66" r="1.2" fill="white" />
         {/* Smile */}
-        <path d="M94 78 Q100 83 106 78" fill="none" stroke="#d7ccc8" stroke-width="1.5" stroke-linecap="round" />
+        <path
+          d="M94 78 Q100 83 106 78"
+          fill="none"
+          stroke="#d7ccc8"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
         {/* Antennae */}
-        <path d="M88 58 Q78 35 68 22" fill="none" stroke="#4e342e" stroke-width="2" stroke-linecap="round" />
+        <path
+          d="M88 58 Q78 35 68 22"
+          fill="none"
+          stroke="#4e342e"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
         <circle cx="67" cy="20" r="2.5" fill="#6d4c41" />
-        <path d="M112 58 Q122 35 132 22" fill="none" stroke="#4e342e" stroke-width="2" stroke-linecap="round" />
+        <path
+          d="M112 58 Q122 35 132 22"
+          fill="none"
+          stroke="#4e342e"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
         <circle cx="133" cy="20" r="2.5" fill="#6d4c41" />
         {/* Legs */}
-        <line x1="86" y1="96" x2="60" y2="108" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="60" y1="108" x2="52" y2="125" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="114" y1="96" x2="140" y2="108" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="140" y1="108" x2="148" y2="125" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="87" y1="108" x2="60" y2="125" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="60" y1="125" x2="52" y2="142" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="113" y1="108" x2="140" y2="125" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="140" y1="125" x2="148" y2="142" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="88" y1="122" x2="62" y2="142" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="62" y1="142" x2="55" y2="158" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="112" y1="122" x2="138" y2="142" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
-        <line x1="138" y1="142" x2="145" y2="158" stroke="#4e342e" stroke-width="2.5" stroke-linecap="round" />
+        <line
+          x1="86"
+          y1="96"
+          x2="60"
+          y2="108"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="60"
+          y1="108"
+          x2="52"
+          y2="125"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="114"
+          y1="96"
+          x2="140"
+          y2="108"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="140"
+          y1="108"
+          x2="148"
+          y2="125"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="87"
+          y1="108"
+          x2="60"
+          y2="125"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="60"
+          y1="125"
+          x2="52"
+          y2="142"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="113"
+          y1="108"
+          x2="140"
+          y2="125"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="140"
+          y1="125"
+          x2="148"
+          y2="142"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="88"
+          y1="122"
+          x2="62"
+          y2="142"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="62"
+          y1="142"
+          x2="55"
+          y2="158"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="112"
+          y1="122"
+          x2="138"
+          y2="142"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="138"
+          y1="142"
+          x2="145"
+          y2="158"
+          stroke="#4e342e"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
         {/* Cheeks */}
         <circle cx="84" cy="72" r="3" fill="#8d6e63" opacity="0.4" />
         <circle cx="116" cy="72" r="3" fill="#8d6e63" opacity="0.4" />

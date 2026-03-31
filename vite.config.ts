@@ -9,7 +9,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.svg'],
       manifest: {
-        name: 'Bugs Are Not Scary!',
+        name: 'Its Not Scary!',
         short_name: 'Bug Friends',
         description:
           'A fun picture book web app to teach kids that bugs are not scary! Learn about ladybugs, butterflies, bees, and more.',

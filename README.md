@@ -1,4 +1,4 @@
-# Bugs Are Not Scary 🐛
+# Its Not Scary! 🐛
 
 An interactive picture-book web app for young children to learn about bugs in a fun, friendly way. Explore 16+ illustrated bugs, read about where they live and what they eat, listen to descriptions read aloud, and take a quiz!
 

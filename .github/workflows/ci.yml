@@ -89,4 +89,4 @@ jobs:
         TARGET: ${{ secrets.SSH_REMOTE_TARGET }}
         EXCLUDE: "/node_modules/,package-lock.json,README.md,/.github/,/.git/,.gitignore,nginx.conf"
         SCRIPT_AFTER: |
-          echo "Bugs are not scary website deployed"
+          echo "Its Not Scary website deployed"

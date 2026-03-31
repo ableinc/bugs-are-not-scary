@@ -14,7 +14,7 @@ export default function App() {
         <div class="app-shell">
           <header class="app-header">
             <a href="/" class="app-logo">
-              🐛 Bugs Are Not Scary!
+              🐛 Its Not Scary!
             </a>
             <div class="app-header-right">
               <ProgressBar />
@@ -24,7 +24,24 @@ export default function App() {
           <main class="app-main">{props.children}</main>
           <footer class="app-footer">
             <p>Made with 💚 to show that bugs are our friends!</p>
-            <p>Its Not Scary &reg | <a href="https://github.com/ableinc/bugs-are-not-scary" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://linkedin.com/in/jaylen-douglas-292b82a6/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            <p>
+              Its Not Scary &reg |{' '}
+              <a
+                href="https://github.com/ableinc/bugs-are-not-scary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>{' '}
+              |{' '}
+              <a
+                href="https://linkedin.com/in/jaylen-douglas-292b82a6/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </p>
           </footer>
         </div>
       )}

@@ -17,8 +17,26 @@ export default function GnatSvg() {
       `}</style>
       <g class="gnat-g">
         {/* Wings */}
-        <ellipse class="gnat-wing-l" cx="72" cy="74" rx="24" ry="10" fill="#cfd8dc" opacity="0.5" transform="rotate(-15 72 74)" />
-        <ellipse class="gnat-wing-r" cx="128" cy="74" rx="24" ry="10" fill="#cfd8dc" opacity="0.5" transform="rotate(15 128 74)" />
+        <ellipse
+          class="gnat-wing-l"
+          cx="72"
+          cy="74"
+          rx="24"
+          ry="10"
+          fill="#cfd8dc"
+          opacity="0.5"
+          transform="rotate(-15 72 74)"
+        />
+        <ellipse
+          class="gnat-wing-r"
+          cx="128"
+          cy="74"
+          rx="24"
+          ry="10"
+          fill="#cfd8dc"
+          opacity="0.5"
+          transform="rotate(15 128 74)"
+        />
         {/* Abdomen – long and slim */}
         <ellipse cx="100" cy="145" rx="12" ry="28" fill="#6d6d6d" />
         <ellipse cx="100" cy="145" rx="12" ry="28" fill="none" stroke="#555" stroke-width="1" />
@@ -34,19 +52,101 @@ export default function GnatSvg() {
         <circle cx="92" cy="72" r="1.3" fill="white" />
         <circle cx="112" cy="72" r="1.3" fill="white" />
         {/* Smile */}
-        <path d="M95 85 Q100 90 105 85" fill="none" stroke="#bdbdbd" stroke-width="1.5" stroke-linecap="round" />
+        <path
+          d="M95 85 Q100 90 105 85"
+          fill="none"
+          stroke="#bdbdbd"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
         {/* Antennae */}
-        <path d="M92 64 Q85 42 78 35" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
-        <path d="M108 64 Q115 42 122 35" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
+        <path
+          d="M92 64 Q85 42 78 35"
+          fill="none"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <path
+          d="M108 64 Q115 42 122 35"
+          fill="none"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
         {/* Long dangling legs */}
-        <line x1="90" y1="112" x2="68" y2="145" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
-        <line x1="68" y1="145" x2="62" y2="170" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
-        <line x1="110" y1="112" x2="132" y2="145" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
-        <line x1="132" y1="145" x2="138" y2="170" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
-        <line x1="92" y1="118" x2="70" y2="155" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
-        <line x1="70" y1="155" x2="65" y2="182" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
-        <line x1="108" y1="118" x2="130" y2="155" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
-        <line x1="130" y1="155" x2="135" y2="182" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
+        <line
+          x1="90"
+          y1="112"
+          x2="68"
+          y2="145"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="68"
+          y1="145"
+          x2="62"
+          y2="170"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="110"
+          y1="112"
+          x2="132"
+          y2="145"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="132"
+          y1="145"
+          x2="138"
+          y2="170"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="92"
+          y1="118"
+          x2="70"
+          y2="155"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="70"
+          y1="155"
+          x2="65"
+          y2="182"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="108"
+          y1="118"
+          x2="130"
+          y2="155"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <line
+          x1="130"
+          y1="155"
+          x2="135"
+          y2="182"
+          stroke="#555"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
       </g>
     </svg>
   );

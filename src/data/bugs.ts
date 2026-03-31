@@ -401,20 +401,23 @@ export const bugs: BugInfo[] = [
     color: '#546e7a',
     tagline: 'A speedy buzzer found in every home!',
     description:
-      'House flies are one of the most common insects on the planet. They have big red compound eyes that can see in nearly every direction at once, and their wings beat about 200 times per second — that\'s what makes the buzzing sound!',
+      "House flies are one of the most common insects on the planet. They have big red compound eyes that can see in nearly every direction at once, and their wings beat about 200 times per second — that's what makes the buzzing sound!",
     habitat:
       'House flies live wherever people live! They are found on every continent except Antarctica. They like warm places and are attracted to food and light.',
-    diet:
-      "House flies can only eat liquids, so they spit digestive juices onto solid food to dissolve it, then slurp it up like a smoothie! They love fruit, sugar, and decaying plants.",
+    diet: 'House flies can only eat liquids, so they spit digestive juices onto solid food to dissolve it, then slurp it up like a smoothie! They love fruit, sugar, and decaying plants.',
     funFacts: [
       'A house fly can taste with its feet!',
       'Flies beat their wings about 200 times per second.',
       'House flies can walk upside down thanks to tiny sticky pads on their feet.',
-      'A fly sees the world in slow motion — that\'s why they\'re so hard to swat!',
+      "A fly sees the world in slow motion — that's why they're so hard to swat!",
     ],
     quizQuestion: {
       question: 'How do house flies eat solid food?',
-      options: ['They chew it with teeth', 'They dissolve it with spit and slurp it up', 'They swallow it whole'],
+      options: [
+        'They chew it with teeth',
+        'They dissolve it with spit and slurp it up',
+        'They swallow it whole',
+      ],
       correctIndex: 1,
     },
   },
@@ -428,8 +431,7 @@ export const bugs: BugInfo[] = [
       'Gnats are some of the smallest flying insects around. They often fly in big swirly clouds, especially on warm evenings. Even though they can be annoying, most gnats are harmless and are an important food source for birds, bats, and fish!',
     habitat:
       'Gnats love moist places. You can find them near ponds, streams, damp soil, and even around houseplants. They are attracted to light and moisture.',
-    diet:
-      'Most gnats feed on plant nectar, fungi, and decaying organic matter. Some gnats help pollinate flowers, just like bees! A few types nibble on plants or tiny insects.',
+    diet: 'Most gnats feed on plant nectar, fungi, and decaying organic matter. Some gnats help pollinate flowers, just like bees! A few types nibble on plants or tiny insects.',
     funFacts: [
       'A cloud of gnats is called a "ghost" — they often hover in one spot!',
       'Some gnats are important pollinators for cocoa plants, which give us chocolate!',
@@ -452,8 +454,7 @@ export const bugs: BugInfo[] = [
       'Moths are close cousins of butterflies, but they prefer the nighttime! They have thick, fuzzy bodies and feathery antennae. Many moths have beautiful patterns on their wings that help them blend in with tree bark and leaves.',
     habitat:
       'Moths live everywhere — forests, gardens, meadows, and even your house! They are most active at night and are famously attracted to bright lights.',
-    diet:
-      'Many moths drink flower nectar at night, helping pollinate plants while everyone is sleeping! Some moths don\'t eat at all as adults — they live off energy stored from when they were caterpillars.',
+    diet: "Many moths drink flower nectar at night, helping pollinate plants while everyone is sleeping! Some moths don't eat at all as adults — they live off energy stored from when they were caterpillars.",
     funFacts: [
       'There are about 160,000 species of moths — way more than butterflies!',
       'Moths use the moon to navigate, which is why lights confuse them.',
@@ -462,7 +463,11 @@ export const bugs: BugInfo[] = [
     ],
     quizQuestion: {
       question: 'Why are moths attracted to lights?',
-      options: ['They are hungry', 'They use the moon to navigate and lights confuse them', 'They want to get warm'],
+      options: [
+        'They are hungry',
+        'They use the moon to navigate and lights confuse them',
+        'They want to get warm',
+      ],
       correctIndex: 1,
     },
   },
@@ -476,8 +481,7 @@ export const bugs: BugInfo[] = [
       'Earwigs are small, flat insects with little pincers on their back end called cerci. Despite their scary name, earwigs do NOT crawl into ears! They are mostly harmless and actually help gardens by munching on pests.',
     habitat:
       'Earwigs love dark, damp hiding spots. You can find them under rocks, logs, mulch, and flower pots. They come out at night to explore and find food.',
-    diet:
-      'Earwigs eat a mix of things — dead leaves, flower petals, small insects, and aphids. They are helpful garden guests because they eat many plant pests!',
+    diet: 'Earwigs eat a mix of things — dead leaves, flower petals, small insects, and aphids. They are helpful garden guests because they eat many plant pests!',
     funFacts: [
       'Earwig moms are amazing parents — they guard their eggs and feed their babies!',
       'The name "earwig" comes from an old myth, but they don\'t actually go in ears!',
@@ -485,7 +489,7 @@ export const bugs: BugInfo[] = [
       'Their pincers are used for defense and catching small prey.',
     ],
     quizQuestion: {
-      question: 'What are the pincers on an earwig\'s back end called?',
+      question: "What are the pincers on an earwig's back end called?",
       options: ['Claws', 'Cerci', 'Fangs'],
       correctIndex: 1,
     },
