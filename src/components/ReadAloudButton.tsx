@@ -1,8 +1,12 @@
+/** biome-ignore-all lint/a11y/useMediaCaption: Captions not provided */
 import { createSignal, onCleanup, onMount } from 'solid-js';
 
 interface Props {
   text: string;
   simple?: boolean;
+  useCdn?: boolean;
+  bugId?: string;
+  audioType?: 'full' | 'description' | 'habitat' | 'diet';
 }
 
 export default function ReadAloudButton(props: Props) {
@@ -68,6 +72,67 @@ export default function ReadAloudButton(props: Props) {
 
   const noVoices = () => voices().length === 0;
 
+  if (props.simple && props.useCdn) {
+    const url = `${__CDN__}/${props.bugId}/${props.audioType}.wav`;
+    let audioRef!: HTMLAudioElement;
+    const [playing, setPlaying] = createSignal(false);
+    const toggle = () => {
+      if (playing()) {
+        audioRef.pause();
+        audioRef.currentTime = 0;
+        setPlaying(false);
+      } else {
+        audioRef.play();
+        setPlaying(true);
+      }
+    };
+    return (
+      <>
+        <audio ref={audioRef} src={url} preload="none" onEnded={() => setPlaying(false)} />
+        <button
+          type="button"
+          class="read-aloud-btn simple"
+          onClick={toggle}
+          aria-label={playing() ? 'Stop reading' : 'Read aloud'}
+          title={playing() ? 'Stop reading' : 'Read aloud'}
+        >
+          <span class="read-aloud-icon">{playing() ? '⏹️' : '🔊'}</span>
+        </button>
+      </>
+    );
+  }
+
+  if (props.useCdn) {
+    const url = `${__CDN__}/${props.bugId}/${props.audioType}.wav`;
+    let audioRef!: HTMLAudioElement;
+    const [playing, setPlaying] = createSignal(false);
+    const toggle = () => {
+      if (playing()) {
+        audioRef.pause();
+        audioRef.currentTime = 0;
+        setPlaying(false);
+      } else {
+        audioRef.play();
+        setPlaying(true);
+      }
+    };
+    return (
+      <div class="read-aloud-controls">
+        <audio ref={audioRef} src={url} preload="none" onEnded={() => setPlaying(false)} />
+        <button
+          type="button"
+          class="read-aloud-btn"
+          onClick={toggle}
+          aria-label={playing() ? 'Stop reading' : 'Read aloud'}
+          title={playing() ? 'Stop reading' : 'Read aloud'}
+        >
+          <span class="read-aloud-icon">{playing() ? '⏹️' : '🔊'}</span>
+          {playing() ? 'Stop' : 'Read to Me!'}
+        </button>
+      </div>
+    );
+  }
+
   if (props.simple) {
     return (
       <button
@@ -103,6 +168,7 @@ export default function ReadAloudButton(props: Props) {
         aria-label="Select voice"
         value={selectedVoiceIndex()}
         onChange={(e) => setSelectedVoiceIndex(Number(e.currentTarget.value))}
+        hidden={props.useCdn}
       >
         {noVoices() ? (
           <option>No voices available</option>

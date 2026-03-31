@@ -3,6 +3,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 import solid from 'vite-plugin-solid';
 
 export default defineConfig({
+  define: {
+    __CDN__: JSON.stringify('https://able.sfo2.cdn.digitaloceanspaces.com/itsnotscary'),
+  },
   plugins: [
     solid(),
     VitePWA({

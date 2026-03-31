@@ -49,7 +49,7 @@ export default function BugDetail() {
               <span class="bug-detail-emoji">{b().emoji}</span>
               <h1>{b().name}</h1>
               <p class="bug-detail-tagline">{b().tagline}</p>
-              <ReadAloudButton text={readText()} />
+              <ReadAloudButton text={readText()} useCdn={true} bugId={b().id} audioType="full" />
             </div>
           </div>
 
@@ -57,19 +57,37 @@ export default function BugDetail() {
             <section class="bug-section">
               <h2>🔍 About Me</h2>
               <p>{b().description}</p>
-              <ReadAloudButton text={b().description} simple={true} />
+              <ReadAloudButton
+                text={b().description}
+                simple={true}
+                useCdn={true}
+                bugId={b().id}
+                audioType="description"
+              />
             </section>
 
             <section class="bug-section">
               <h2>🏡 Where I Live</h2>
               <p>{b().habitat}</p>
-              <ReadAloudButton text={b().habitat} simple={true} />
+              <ReadAloudButton
+                text={b().habitat}
+                simple={true}
+                useCdn={true}
+                bugId={b().id}
+                audioType="habitat"
+              />
             </section>
 
             <section class="bug-section">
               <h2>🍽️ What I Eat</h2>
               <p>{b().diet}</p>
-              <ReadAloudButton text={b().diet} simple={true} />
+              <ReadAloudButton
+                text={b().diet}
+                simple={true}
+                useCdn={true}
+                bugId={b().id}
+                audioType="diet"
+              />
             </section>
 
             <section class="bug-section">
