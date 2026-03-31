@@ -88,7 +88,7 @@ export default function ReadAloudButton(props: Props) {
     };
     return (
       <>
-        <audio ref={audioRef} src={url} crossorigin="anonymous" preload="none" onEnded={() => setPlaying(false)} />
+        <audio ref={audioRef} src={url} preload="none" onEnded={() => setPlaying(false)} />
         <button
           type="button"
           class="read-aloud-btn simple"
@@ -118,7 +118,7 @@ export default function ReadAloudButton(props: Props) {
     };
     return (
       <div class="read-aloud-controls">
-        <audio ref={audioRef} src={url} crossorigin="anonymous" preload="none" onEnded={() => setPlaying(false)} />
+        <audio ref={audioRef} src={url} preload="none" onEnded={() => setPlaying(false)} />
         <button
           type="button"
           class="read-aloud-btn"

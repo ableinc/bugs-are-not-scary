@@ -4,7 +4,7 @@ import solid from 'vite-plugin-solid';
 
 export default defineConfig({
   define: {
-    __CDN__: JSON.stringify('https://able.sfo2.cdn.digitaloceanspaces.com/itsnotscary'),
+    __CDN__: JSON.stringify('/media'),
   },
   plugins: [
     solid(),
@@ -42,11 +42,8 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/able\.sfo2\.cdn\.digitaloceanspaces\.com\/itsnotscary\/.*/,
-            handler: 'NetworkOnly',
-          },
+        navigateFallbackDenylist: [
+          /^https:\/\/able\.sfo2\.cdn\.digitaloceanspaces\.com/,
         ],
       },
     }),
