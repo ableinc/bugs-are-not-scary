@@ -1,4 +1,4 @@
-name: Jaylen Douglas Website CI/CD
+name: Its Not Scary CI/CD
 
 on:
   push:
