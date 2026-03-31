@@ -42,9 +42,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        navigateFallbackDenylist: [
-          /^https:\/\/able\.sfo2\.cdn\.digitaloceanspaces\.com/,
-        ],
+        navigateFallbackDenylist: [/^https:\/\/able\.sfo2\.cdn\.digitaloceanspaces\.com/],
       },
     }),
   ],
