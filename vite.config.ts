@@ -16,8 +16,8 @@ export default defineConfig({
         theme_color: '#ff8c42',
         background_color: '#fef9f0',
         display: 'standalone',
-        scope: '/bugs-are-not-scary/',
-        start_url: '/bugs-are-not-scary/',
+        scope: '/',
+        start_url: '/',
         icons: [
           {
             src: 'pwa-192x192.svg',
