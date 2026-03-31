@@ -42,6 +42,22 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/able\.sfo2\.cdn\.digitaloceanspaces\.com\/itsnotscary\/.*/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'cdn-audio',
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+        ],
       },
     }),
   ],
