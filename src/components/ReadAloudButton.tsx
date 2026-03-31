@@ -2,6 +2,7 @@ import { createSignal, onCleanup, onMount } from 'solid-js';
 
 interface Props {
   text: string;
+  simple?: boolean;
 }
 
 export default function ReadAloudButton(props: Props) {
@@ -66,6 +67,21 @@ export default function ReadAloudButton(props: Props) {
   };
 
   const noVoices = () => voices().length === 0;
+
+  if (props.simple) {
+    return (
+      <button
+        type="button"
+        class="read-aloud-btn simple"
+        onClick={speak}
+        disabled={noVoices()}
+        aria-label={speaking() ? 'Stop reading' : 'Read aloud'}
+        title={noVoices() ? 'Voices not available' : speaking() ? 'Stop reading' : 'Read aloud'}
+      >
+        <span class="read-aloud-icon">{speaking() ? '⏹️' : '🔊'}</span>
+      </button>
+    );
+  }
 
   return (
     <div class="read-aloud-controls">

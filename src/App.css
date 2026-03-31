@@ -292,6 +292,19 @@
   cursor: not-allowed;
 }
 
+.read-aloud-btn.simple {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .voice-select {
   padding: 0.4rem 0.6rem;
   border-radius: var(--radius);
@@ -337,6 +350,7 @@
 }
 
 .bug-section {
+  position: relative;
   background: var(--bg-card);
   border: 2px solid var(--border);
   border-radius: var(--radius);
@@ -460,7 +474,40 @@
 /* ===== Not Found ===== */
 .not-found {
   text-align: center;
-  padding: 3rem;
+  padding: 4rem 2rem;
+}
+
+.not-found-emoji {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.not-found h1 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: 0.5rem;
+}
+
+.not-found-text {
+  font-size: var(--font-size-lg);
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.not-found-link {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.not-found-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
 /* ===== Quiz Page ===== */

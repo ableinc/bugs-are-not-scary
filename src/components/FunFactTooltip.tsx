@@ -1,7 +1,9 @@
 import { createSignal, Show } from 'solid-js';
+import ReadAloudButton from './ReadAloudButton';
 
 interface Props {
   facts: string[];
+  reset?: boolean;
 }
 
 export default function FunFactTooltip(props: Props) {
@@ -18,6 +20,11 @@ export default function FunFactTooltip(props: Props) {
   const nextFact = () => {
     setIndex((i) => (i + 1) % props.facts.length);
   };
+
+  if (props.reset) {
+    setOpen(false);
+    setIndex(0);
+  }
 
   return (
     <div class="fun-fact-container">
@@ -49,6 +56,7 @@ export default function FunFactTooltip(props: Props) {
           >
             ✕
           </button>
+          <ReadAloudButton text={props.facts[index()]} simple={true} />
         </div>
       </Show>
     </div>

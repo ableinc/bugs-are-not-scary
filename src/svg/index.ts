@@ -8,10 +8,14 @@ import CockroachSvg from './Cockroach';
 import CricketSvg from './Cricket';
 import DragonflySvg from './Dragonfly';
 import EarthwormSvg from './Earthworm';
+import EarwigSvg from './Earwig';
 import FireflySvg from './Firefly';
+import GnatSvg from './Gnat';
 import GrasshopperSvg from './Grasshopper';
+import HouseFlySvg from './HouseFly';
 import LadybugSvg from './Ladybug';
 import MosquitoSvg from './Mosquito';
+import MothSvg from './Moth';
 import PillBugSvg from './PillBug';
 import PrayingMantisSvg from './PrayingMantis';
 import SpiderSvg from './Spider';
@@ -33,4 +37,8 @@ export const bugSvgMap: Record<string, Component> = {
   cricket: CricketSvg,
   mosquito: MosquitoSvg,
   cockroach: CockroachSvg,
+  'house-fly': HouseFlySvg,
+  gnat: GnatSvg,
+  moth: MothSvg,
+  earwig: EarwigSvg,
 };

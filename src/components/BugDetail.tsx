@@ -57,16 +57,19 @@ export default function BugDetail() {
             <section class="bug-section">
               <h2>🔍 About Me</h2>
               <p>{b().description}</p>
+              <ReadAloudButton text={b().description} simple={true} />
             </section>
 
             <section class="bug-section">
               <h2>🏡 Where I Live</h2>
               <p>{b().habitat}</p>
+              <ReadAloudButton text={b().habitat} simple={true} />
             </section>
 
             <section class="bug-section">
               <h2>🍽️ What I Eat</h2>
               <p>{b().diet}</p>
+              <ReadAloudButton text={b().diet} simple={true} />
             </section>
 
             <section class="bug-section">
