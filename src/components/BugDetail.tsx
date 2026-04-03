@@ -1,7 +1,7 @@
 import { A, useParams } from '@solidjs/router';
-import { onMount, Show } from 'solid-js';
+import { createEffect, createSignal, Show } from 'solid-js';
 import { Dynamic } from 'solid-js/web';
-import { getAdjacentBugs, getBugById } from '../data/bugs';
+import { type BugInfo, getAdjacentBugs, getBugById } from '../data/bugs';
 import { bugSvgMap } from '../svg';
 import FunFactTooltip from './FunFactTooltip';
 import NavArrows from './NavArrows';
@@ -10,12 +10,12 @@ import ReadAloudButton from './ReadAloudButton';
 
 export default function BugDetail() {
   const params = useParams<{ id: string }>();
-
-  const bug = () => getBugById(params.id);
+  const [bug, setBug] = createSignal<BugInfo | undefined>(undefined);
   const adjacent = () => getAdjacentBugs(params.id);
   const SvgComponent = () => bugSvgMap[params.id];
 
-  onMount(() => {
+  createEffect(() => {
+    setBug(getBugById(params.id));
     markVisited(params.id);
   });
 
