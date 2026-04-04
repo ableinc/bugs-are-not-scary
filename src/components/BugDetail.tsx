@@ -19,12 +19,6 @@ export default function BugDetail() {
     markVisited(params.id);
   });
 
-  const readText = () => {
-    const b = bug();
-    if (!b) return '';
-    return `${b.name}. ${b.tagline}. ${b.description} ${b.habitat} ${b.diet}`;
-  };
-
   return (
     <Show
       when={bug()}
@@ -49,7 +43,7 @@ export default function BugDetail() {
               <span class="bug-detail-emoji">{b().emoji}</span>
               <h1>{b().name}</h1>
               <p class="bug-detail-tagline">{b().tagline}</p>
-              <ReadAloudButton text={readText()} useCdn={true} bugId={b().id} audioType="full" />
+              <ReadAloudButton useCdn={true} bugId={b().id} audioType="full" />
             </div>
           </div>
 
