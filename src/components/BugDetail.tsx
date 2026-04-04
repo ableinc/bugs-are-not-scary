@@ -40,7 +40,7 @@ export default function BugDetail() {
               <Dynamic component={SvgComponent()} />
             </div>
             <div class="bug-detail-intro">
-              <span class="bug-detail-emoji">{b().emoji}</span>
+              <span class="bug-detail-emoji">{b().region}</span>
               <h1>{b().name}</h1>
               <p class="bug-detail-tagline">{b().tagline}</p>
               <ReadAloudButton useCdn={true} bugId={b().id} audioType="full" />
@@ -83,6 +83,20 @@ export default function BugDetail() {
                 audioType="diet"
               />
             </section>
+
+            <Show when={b().useCaution}>
+              <section class="bug-section">
+                <h2>⚠️ Safety</h2>
+                <p>{b().safety}</p>
+                <ReadAloudButton
+                  text={b().safety}
+                  simple={true}
+                  useCdn={true}
+                  bugId={b().id}
+                  audioType="safety"
+                />
+              </section>
+            </Show>
 
             <section class="bug-section">
               <FunFactTooltip facts={b().funFacts} />

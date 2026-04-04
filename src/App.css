@@ -194,6 +194,16 @@
   margin: 0;
 }
 
+.bug-card--caution {
+  border-color: var(--danger);
+}
+
+.bug-card-region {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
 /* ===== Quiz CTA ===== */
 .quiz-cta {
   margin: 2rem 0;

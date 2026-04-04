@@ -22,7 +22,7 @@
   --accent-dark: #e06a1e;
   --success: #4caf50;
   --success-light: #c8e6c9;
-  --danger: #ef5350;
+  --danger: lab(51.05% 68.88 36.49);
   --danger-light: #ffcdd2;
   --border: #e8ddd0;
   --shadow: rgba(61, 44, 30, 0.08);
@@ -54,7 +54,7 @@
   --accent-dark: #ffcc99;
   --success: #66bb6a;
   --success-light: #1b3d1c;
-  --danger: #ef5350;
+  --danger: lab(51.05% 68.88 36.49);
   --danger-light: #3d1b1b;
   --border: #3d3348;
   --shadow: rgba(0, 0, 0, 0.2);
