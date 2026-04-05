@@ -17,6 +17,9 @@ export interface BugInfo {
   diet: string;
   funFacts: string[];
   quizQuestion: QuizQuestion;
+  useCaution: boolean;
+  region: string;
+  safety: string;
 }
 
 export const bugs: BugInfo[] = bugInfo;

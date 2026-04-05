@@ -6,7 +6,7 @@ interface Props {
   simple?: boolean;
   useCdn?: boolean;
   bugId?: string;
-  audioType?: 'full' | 'description' | 'habitat' | 'diet';
+  audioType?: 'full' | 'description' | 'habitat' | 'diet' | 'safety';
 }
 
 export default function ReadAloudButton(props: Props) {

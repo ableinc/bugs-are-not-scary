@@ -18,7 +18,10 @@
       "question": "What do ladybugs love to eat?",
       "options": ["Pizza", "Aphids (tiny bugs)", "Leaves"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇬🇧🇩🇪🇫🇷🇯🇵",
+    "safety": ""
   },
   {
     "id": "butterfly",
@@ -39,7 +42,10 @@
       "question": "What is the curly tongue of a butterfly called?",
       "options": ["A sniffer", "A proboscis", "A tentacle"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇧🇷🇲🇽🇮🇳🇦🇺",
+    "safety": ""
   },
   {
     "id": "caterpillar",
@@ -60,7 +66,10 @@
       "question": "What do caterpillars grow up to become?",
       "options": ["Ladybugs", "Butterflies or moths", "Bees"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇬🇧🇦🇺🇯🇵🇧🇷",
+    "safety": ""
   },
   {
     "id": "bee",
@@ -81,7 +90,10 @@
       "question": "How do bees tell their friends where flowers are?",
       "options": ["They sing", "They do a wiggle dance", "They draw a map"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": true,
+    "region": "🇺🇸🇬🇧🇩🇪🇦🇺🇨🇳",
+    "safety": "If stung, move away calmly and scrape the stinger out — do not squeeze it! Apply a cold pack to the area and seek help straight away."
   },
   {
     "id": "ant",
@@ -102,7 +114,10 @@
       "question": "How much weight can an ant carry?",
       "options": ["2 times its weight", "50 times its weight", "5 times its weight"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇧🇷🇦🇺🇮🇳🇨🇳",
+    "safety": ""
   },
   {
     "id": "dragonfly",
@@ -123,7 +138,10 @@
       "question": "What can a dragonfly do that most insects cannot?",
       "options": ["Swim", "Fly backward and hover", "Dig tunnels"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇯🇵🇨🇳🇮🇳🇦🇺",
+    "safety": ""
   },
   {
     "id": "firefly",
@@ -144,7 +162,10 @@
       "question": "Why do fireflies flash their lights?",
       "options": ["To scare people", "To say hello to other fireflies", "To see in the dark"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇯🇵🇧🇷🇨🇳",
+    "safety": ""
   },
   {
     "id": "spider",
@@ -165,7 +186,10 @@
       "question": "What is special about spider silk?",
       "options": ["It's sticky and pink", "It's stronger than steel", "It tastes like candy"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": true,
+    "region": "🇺🇸🇦🇺🇧🇷🇮🇳🇨🇳",
+    "safety": "Most spiders are completely harmless, but avoid touching any spider you do not recognise. Never touch a unknown spider with your bare hands. If bitten, seek help straight away."
   },
   {
     "id": "beetle",
@@ -186,7 +210,10 @@
       "question": "What protects a beetle's body?",
       "options": ["Fur", "Hard shiny wing covers", "Slime"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇧🇷🇦🇺🇮🇳🇨🇳",
+    "safety": ""
   },
   {
     "id": "grasshopper",
@@ -207,7 +234,10 @@
       "question": "Where are a grasshopper's ears?",
       "options": ["On their head", "On their belly", "On their legs"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇦🇺🇳🇬🇮🇳🇿🇦",
+    "safety": ""
   },
   {
     "id": "earthworm",
@@ -228,7 +258,10 @@
       "question": "How many hearts does an earthworm have?",
       "options": ["One", "Five", "Ten"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇬🇧🇦🇺🇮🇳🇨🇳",
+    "safety": ""
   },
   {
     "id": "praying-mantis",
@@ -253,7 +286,10 @@
         "It uses a web"
       ],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇨🇳🇯🇵🇮🇳🇿🇦",
+    "safety": ""
   },
   {
     "id": "cricket",
@@ -278,7 +314,10 @@
         "They vibrate their belly"
       ],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇨🇳🇯🇵🇮🇳🇦🇺",
+    "safety": ""
   },
   {
     "id": "mosquito",
@@ -299,7 +338,10 @@
       "question": "Which mosquitoes bite?",
       "options": ["Only males", "Only females", "Both males and females"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": true,
+    "region": "🇧🇷🇮🇳🇳🇬🇨🇳🇺🇸",
+    "safety": "In many parts of the world, mosquitoes can spread illnesses such as malaria, dengue fever, and Zika. Remove any standing water near your home where mosquitoes breed."
   },
   {
     "id": "cockroach",
@@ -320,7 +362,10 @@
       "question": "How long have cockroaches been on Earth?",
       "options": ["10,000 years", "300 million years", "1 million years"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇧🇷🇮🇳🇨🇳🇦🇺",
+    "safety": ""
   },
   {
     "id": "pill-bug",
@@ -341,7 +386,10 @@
       "question": "What are pill bugs related to?",
       "options": ["Spiders", "Crabs and lobsters", "Butterflies"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇬🇧🇫🇷🇩🇪🇦🇺",
+    "safety": ""
   },
   {
     "id": "house-fly",
@@ -366,7 +414,10 @@
         "They swallow it whole"
       ],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇬🇧🇮🇳🇨🇳🇦🇺",
+    "safety": ""
   },
   {
     "id": "gnat",
@@ -387,7 +438,10 @@
       "question": "What is a hovering cloud of gnats called?",
       "options": ["A swarm", "A ghost", "A flock"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇬🇧🇩🇪🇨🇦🇦🇺",
+    "safety": ""
   },
   {
     "id": "moth",
@@ -412,7 +466,10 @@
         "They want to get warm"
       ],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇬🇧🇯🇵🇮🇳🇦🇺",
+    "safety": ""
   },
   {
     "id": "earwig",
@@ -433,6 +490,141 @@
       "question": "What are the pincers on an earwig's back end called?",
       "options": ["Claws", "Cerci", "Fangs"],
       "correctIndex": 1
-    }
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇬🇧🇩🇪🇫🇷🇦🇺",
+    "safety": ""
+  },
+  {
+    "id": "wasp",
+    "name": "Wasp",
+    "emoji": "🐝",
+    "color": "#f9a825",
+    "tagline": "A striped stinger that builds paper nests!",
+    "description": "Wasps are sleek, striped insects with smooth, shiny bodies and a sharp stinger. Unlike fuzzy bees, a wasp's body looks almost polished! They are clever insects that work together in large colonies and are surprisingly important helpers in the garden.",
+    "habitat": "Wasps build nests almost anywhere — in trees, underground, inside walls, or hanging under roof edges. They chew up wood and mix it with their saliva to make a special paper material for their nests. They invented paper long before humans!",
+    "diet": "Adult wasps drink nectar from flowers and love sweet things. But they also hunt caterpillars and other insects to feed to their babies! Wasps are important predators that help keep garden pests under control.",
+    "funFacts": [
+      "Wasps invented paper! They chew wood into pulp to build their papery nests.",
+      "A wasp can sting multiple times — unlike a honeybee, which can only sting once.",
+      "Some wasps are completely harmless and help pollinate flowers just like bees.",
+      "A single wasp nest can hold tens of thousands of wasps by the end of summer!"
+    ],
+    "quizQuestion": {
+      "question": "What material do wasps use to build their nests?",
+      "options": ["Mud and grass", "Chewed-up wood pulp", "Beeswax"],
+      "correctIndex": 1
+    },
+    "useCaution": true,
+    "region": "🇺🇸🇬🇧🇩🇪🇫🇷🇦🇺",
+    "safety": "Stay calm around wasps and never swat at them or disturb their nest. If one lands on you, stay still and let it fly away on its own. If stung, seek help straight away."
+  },
+  {
+    "id": "cicada",
+    "name": "Cicada",
+    "emoji": "🎵",
+    "color": "#558b2f",
+    "tagline": "The world's loudest insect singer!",
+    "description": "Cicadas are large insects famous for their incredibly loud buzzing songs. Only adult males sing — they use special body drums called tymbals to make their music. On a hot summer day, a chorus of cicadas can be louder than a lawnmower!",
+    "habitat": "Cicadas live in forests and woodlands around the world. Baby cicadas (called nymphs) live underground, sipping sap from tree roots. Some cicada nymphs spend 17 years underground before finally coming up to sing!",
+    "diet": "Cicadas drink plant sap using a needle-like mouth, like a tiny straw. Young cicadas sip sap from tree roots underground. Adult cicadas drink from the branches and twigs of trees.",
+    "funFacts": [
+      "Some cicadas spend 17 years underground before emerging — the longest childhood of any insect!",
+      "A cicada's song can reach 120 decibels — as loud as a rock concert!",
+      "Billions of cicadas can emerge all at once in a giant event called a brood.",
+      "Cicadas shed their skin when they grow up — you can find the empty shells stuck to tree bark!"
+    ],
+    "quizQuestion": {
+      "question": "How do male cicadas make their singing sound?",
+      "options": [
+        "By rubbing their legs together",
+        "With body drums called tymbals",
+        "By flapping their wings"
+      ],
+      "correctIndex": 1
+    },
+    "useCaution": false,
+    "region": "🇺🇸🇯🇵🇦🇺🇨🇳🇧🇷",
+    "safety": ""
+  },
+  {
+    "id": "stick-insect",
+    "name": "Stick Insect",
+    "emoji": "🌿",
+    "color": "#795548",
+    "tagline": "A master of disguise that looks just like a twig!",
+    "description": "Stick insects are the ultimate hide-and-seek champions! Their long, thin bodies look exactly like twigs and branches — it's almost impossible to spot them on a plant. Some can even sway gently from side to side to mimic a twig moving in the breeze!",
+    "habitat": "Stick insects live in forests and dense bushes in tropical and subtropical regions around the world. They hang out in trees and shrubs where their camouflage works best. Many are nocturnal — they only come out at night.",
+    "diet": "Stick insects are plant eaters. They munch quietly on leaves from trees and shrubs, especially oak, privet, and blackberry. They eat mostly at night when it is safer to move around.",
+    "funFacts": [
+      "Some stick insects can regrow a lost leg — a true superpower!",
+      "Female stick insects can lay eggs without a male — those eggs hatch into more females!",
+      "The world's longest insect is a stick insect, measuring over 25 inches long!",
+      "Stick insect eggs look just like plant seeds, which tricks ants into carrying them to new places!"
+    ],
+    "quizQuestion": {
+      "question": "How do stick insects stay safe from predators?",
+      "options": [
+        "They sting with a sharp tail",
+        "They look exactly like twigs and branches",
+        "They run very fast"
+      ],
+      "correctIndex": 1
+    },
+    "useCaution": false,
+    "region": "🇦🇺🇮🇩🇲🇾🇧🇷🇮🇳",
+    "safety": ""
+  },
+  {
+    "id": "termite",
+    "name": "Termite",
+    "emoji": "🪵",
+    "color": "#8d6e63",
+    "tagline": "A tiny builder that raises towers taller than a house!",
+    "description": "Termites may be small and pale, but they are some of the most impressive builders on Earth! These soft insects live in enormous colonies and work together nonstop to build giant mounds out of soil, chewed wood, and saliva. Termite mounds can stand taller than a grown adult!",
+    "habitat": "Termites live on every continent except Antarctica. They build their homes underground, inside wood, or in towering above-ground mounds. Their tunnel networks can stretch for miles underground, like a tiny underground city.",
+    "diet": "Termites eat wood, dead plants, and fallen leaves. Tiny microbes living in their tummies help them digest wood — a material almost no other animal can eat! This makes termites super important recyclers in nature.",
+    "funFacts": [
+      "A termite queen can lay up to 30,000 eggs every single day!",
+      "Termite mounds have built-in air conditioning — special channels keep the inside cool!",
+      "Termites have been on Earth for over 130 million years.",
+      "Some termite colonies have millions of workers, all born from one queen!"
+    ],
+    "quizQuestion": {
+      "question": "What helps termites digest wood?",
+      "options": [
+        "Very strong teeth",
+        "Tiny microbes living in their tummies",
+        "Special stomach acid"
+      ],
+      "correctIndex": 1
+    },
+    "useCaution": false,
+    "region": "🇦🇺🇧🇷🇿🇦🇳🇬🇮🇳",
+    "safety": ""
+  },
+  {
+    "id": "stag-beetle",
+    "name": "Stag Beetle",
+    "emoji": "🦌",
+    "color": "#4e342e",
+    "tagline": "A shiny armored bug with giant antler jaws!",
+    "description": "The stag beetle is one of the most spectacular insects in the world! Male stag beetles have enormous, branching mandibles (jaws) that look just like a stag deer's antlers. Despite looking frightening, their bite is surprisingly gentle — they use those impressive jaws mainly for wrestling other males!",
+    "habitat": "Stag beetles live in deciduous forests and woodlands across Europe and Asia. They are most often found near old, rotting oak trees, which their larvae love. Adults are most active on warm summer evenings and are surprisingly good flyers!",
+    "diet": "Adult stag beetles drink tree sap and juice from rotten fruit. Baby stag beetles (larvae) live inside rotting wood for up to six years, slowly eating the wood from the inside out while they grow.",
+    "funFacts": [
+      "Male stag beetles use their giant jaw-antlers to wrestle rivals and impress females!",
+      "Stag beetle larvae can live inside rotting wood for up to 6 years before becoming adults!",
+      "Stag beetles can fly — they take to the air on warm summer evenings.",
+      "Stag beetles are one of the largest beetles in Europe, growing up to 3 inches long!"
+    ],
+    "quizQuestion": {
+      "question": "What do male stag beetles mainly use their giant jaw-antlers for?",
+      "options": ["Eating through wood", "Wrestling other males", "Digging tunnels"],
+      "correctIndex": 1
+    },
+    "useCaution": false,
+    "region": "🇬🇧🇩🇪🇫🇷🇯🇵🇷🇴",
+    "safety": ""
   }
 ]

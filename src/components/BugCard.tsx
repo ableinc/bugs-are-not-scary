@@ -11,7 +11,11 @@ export default function BugCard(props: Props) {
   const SvgComponent = () => bugSvgMap[props.bug.id];
 
   return (
-    <A href={`/bug/${props.bug.id}`} class="bug-card" style={{ '--bug-color': props.bug.color }}>
+    <A
+      href={`/bug/${props.bug.id}`}
+      class={`bug-card${props.bug.useCaution ? ' bug-card--caution' : ''}`}
+      style={{ '--bug-color': props.bug.color }}
+    >
       <div class="bug-card-svg">
         <Dynamic component={SvgComponent()} />
       </div>
@@ -19,6 +23,7 @@ export default function BugCard(props: Props) {
         <span class="bug-card-emoji">{props.bug.emoji}</span>
         <h3 class="bug-card-name">{props.bug.name}</h3>
         <p class="bug-card-tagline">{props.bug.tagline}</p>
+        <p class="bug-card-region">{props.bug.region}</p>
       </div>
     </A>
   );

@@ -4,6 +4,7 @@ import BeeSvg from './Bee';
 import BeetleSvg from './Beetle';
 import ButterflySvg from './Butterfly';
 import CaterpillarSvg from './Caterpillar';
+import CicadaSvg from './Cicada';
 import CockroachSvg from './Cockroach';
 import CricketSvg from './Cricket';
 import DragonflySvg from './Dragonfly';
@@ -19,6 +20,10 @@ import MothSvg from './Moth';
 import PillBugSvg from './PillBug';
 import PrayingMantisSvg from './PrayingMantis';
 import SpiderSvg from './Spider';
+import StagBeetleSvg from './StagBeetle';
+import StickInsectSvg from './StickInsect';
+import TermiteSvg from './Termite';
+import WaspSvg from './Wasp';
 
 export const bugSvgMap: Record<string, Component> = {
   ladybug: LadybugSvg,
@@ -41,4 +46,9 @@ export const bugSvgMap: Record<string, Component> = {
   gnat: GnatSvg,
   moth: MothSvg,
   earwig: EarwigSvg,
+  wasp: WaspSvg,
+  cicada: CicadaSvg,
+  'stick-insect': StickInsectSvg,
+  termite: TermiteSvg,
+  'stag-beetle': StagBeetleSvg,
 };
