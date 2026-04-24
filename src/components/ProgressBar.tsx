@@ -29,11 +29,13 @@ export function initVisited() {
 export default function ProgressBar() {
   onMount(() => {
     initVisited();
-    toast.success('Welcome to Its Not Scary! Click on any bug to learn more about them.', {
+    toast.success('Welcome to Its Not Scary!', {
+      description: 'Click on any bug to learn more about them.',
       icon: '🐞',
       onAutoClose: () => {
-        if (visitedBugs().size > 0) return;
-        toast.info('Explore more bugs to unlock the quiz!', {
+        if (visitedBugs().size > 4) return;
+        toast.info('Explore more bugs!', {
+          description: 'Take the quiz after visiting 5 different bugs.',
           icon: '🔓',
         });
       },

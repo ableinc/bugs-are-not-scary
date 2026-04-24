@@ -17,7 +17,7 @@ export default function App() {
           <div class="app-shell">
             <header class="app-header">
               <a href="/" class="app-logo">
-                Its Not Scary! 🐛 
+                Its Not Scary!
               </a>
               <div class="app-header-right">
                 <ProgressBar />

@@ -10,7 +10,7 @@ export default defineConfig({
     solid(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'apple-touch-icon.svg'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.svg'],
       manifest: {
         name: 'Its Not Scary!',
         short_name: 'Bug Friends',
