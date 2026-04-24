@@ -206,10 +206,22 @@
 
 /* ===== Quiz CTA ===== */
 .quiz-cta {
-  margin: 2rem 0;
+  display: contents;
 }
 
-.quiz-btn,
+.quiz-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
 .quiz-home-btn {
   display: inline-block;
   background: var(--accent);
@@ -336,6 +348,23 @@
 .voice-select:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+.read-aloud-spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: read-aloud-spin 0.7s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes read-aloud-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ===== Bug Detail Sections ===== */

@@ -1,5 +1,4 @@
 import { createSignal, Show } from 'solid-js';
-import ReadAloudButton from './ReadAloudButton';
 
 interface Props {
   facts: string[];
@@ -56,7 +55,6 @@ export default function FunFactTooltip(props: Props) {
           >
             ✕
           </button>
-          <ReadAloudButton text={props.facts[index()]} simple={true} />
         </div>
       </Show>
     </div>
