@@ -5,6 +5,7 @@ import solid from 'vite-plugin-solid';
 export default defineConfig({
   define: {
     __CDN__: JSON.stringify('/media'),
+    __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
   },
   plugins: [
     solid(),

@@ -1,7 +1,7 @@
 {
   "name": "bugs-are-not-scary",
   "private": true,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "type": "module",
   "author": {
     "name": "Jaylen Douglas",

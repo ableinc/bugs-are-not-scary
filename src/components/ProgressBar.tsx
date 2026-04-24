@@ -2,11 +2,12 @@ import { A, useLocation } from '@solidjs/router';
 import { createSignal, onCleanup, onMount, Show } from 'solid-js';
 import { toast } from 'solid-sonner';
 import { bugs } from '../data/bugs';
+import { getStorageItem, setStorageItem } from '../lib/storage';
 
 function getVisited(): Set<string> {
   try {
-    const raw = localStorage.getItem('bugs-visited');
-    if (raw) return new Set(JSON.parse(raw));
+    const raw = getStorageItem<string[]>('bugs-visited');
+    if (raw) return new Set(raw);
   } catch {}
   return new Set();
 }
@@ -17,7 +18,7 @@ export function markVisited(id: string) {
   setVisitedBugs((prev) => {
     const next = new Set(prev);
     next.add(id);
-    localStorage.setItem('bugs-visited', JSON.stringify([...next]));
+    setStorageItem('bugs-visited', [...next]);
     return next;
   });
 }

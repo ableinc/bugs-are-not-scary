@@ -11,7 +11,7 @@ import Quiz from './components/Quiz';
 export default function App() {
   return (
     <>
-      <Toaster position="top-right" />
+      <Toaster position="top-right" offset="4.5rem" />
       <Router
         root={(props) => (
           <div class="app-shell">

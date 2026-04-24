@@ -1,10 +1,11 @@
 import { createSignal, onMount } from 'solid-js';
+import { getStorageItem, setStorageItem } from '../lib/storage';
 
 export default function DarkModeToggle() {
   const [dark, setDark] = createSignal(false);
 
   onMount(() => {
-    const saved = localStorage.getItem('bugs-theme');
+    const saved = getStorageItem<string>('bugs-theme');
     if (saved === 'dark') {
       setDark(true);
       document.documentElement.setAttribute('data-theme', 'dark');
@@ -15,7 +16,7 @@ export default function DarkModeToggle() {
     const next = !dark();
     setDark(next);
     document.documentElement.setAttribute('data-theme', next ? 'dark' : 'light');
-    localStorage.setItem('bugs-theme', next ? 'dark' : 'light');
+    setStorageItem('bugs-theme', next ? 'dark' : 'light');
   };
 
   return (
