@@ -1,5 +1,5 @@
-import { A } from '@solidjs/router';
-import { createSignal, onMount, Show } from 'solid-js';
+import { A, useLocation } from '@solidjs/router';
+import { createSignal, onCleanup, onMount, Show } from 'solid-js';
 import { toast } from 'solid-sonner';
 import { bugs } from '../data/bugs';
 
@@ -27,6 +27,9 @@ export function initVisited() {
 }
 
 export default function ProgressBar() {
+  const [fabBottom, setFabBottom] = createSignal('1.5rem');
+  const location = useLocation();
+
   onMount(() => {
     initVisited();
     toast.success('Welcome to Its Not Scary!', {
@@ -40,6 +43,24 @@ export default function ProgressBar() {
         });
       },
     });
+
+    const footer = document.querySelector('.app-footer') as HTMLElement | null;
+    if (!footer) return;
+
+    const thresholds = Array.from({ length: 101 }, (_, i) => i / 100);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setFabBottom(`${entry.intersectionRect.height + 24}px`);
+        } else {
+          setFabBottom('1.5rem');
+        }
+      },
+      { threshold: thresholds },
+    );
+
+    observer.observe(footer);
+    onCleanup(() => observer.disconnect());
   });
 
   const count = () => visitedBugs().size;
@@ -48,26 +69,33 @@ export default function ProgressBar() {
   const showQuiz = () => count() >= 5;
 
   return (
-    <div class="progress-bar-wrap">
-      <Show when={showQuiz()}>
-        <div class="quiz-cta">
-          <A href="/quiz" class="quiz-btn">
-            🧠 Take the Quiz!
-          </A>
+    <>
+      <div class="progress-bar-wrap">
+        <Show when={showQuiz()}>
+          <div class="quiz-cta">
+            <A href="/quiz" class="quiz-btn">
+              🧠 Take the Quiz!
+            </A>
+          </div>
+        </Show>
+        <div class="progress-label">
+          You've met <strong>{count()}</strong> of <strong>{total}</strong> bugs!
         </div>
+        <div
+          class="progress-track"
+          role="progressbar"
+          aria-valuenow={count()}
+          aria-valuemin={0}
+          aria-valuemax={total}
+        >
+          <div class="progress-fill" style={{ width: `${pct()}%` }} />
+        </div>
+      </div>
+      <Show when={showQuiz() && location.pathname !== '/quiz'}>
+        <A href="/quiz" class="quiz-fab" style={{ bottom: fabBottom() }} aria-label="Take the Quiz">
+          🧠
+        </A>
       </Show>
-      <div class="progress-label">
-        You've met <strong>{count()}</strong> of <strong>{total}</strong> bugs!
-      </div>
-      <div
-        class="progress-track"
-        role="progressbar"
-        aria-valuenow={count()}
-        aria-valuemin={0}
-        aria-valuemax={total}
-      >
-        <div class="progress-fill" style={{ width: `${pct()}%` }} />
-      </div>
-    </div>
+    </>
   );
 }

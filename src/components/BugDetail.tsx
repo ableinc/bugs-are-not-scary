@@ -1,5 +1,5 @@
 import { A, useParams } from '@solidjs/router';
-import { createEffect, createSignal, Show } from 'solid-js';
+import { createEffect, createSignal, onMount, Show } from 'solid-js';
 import { Dynamic } from 'solid-js/web';
 import { type BugInfo, getAdjacentBugs, getBugById } from '../data/bugs';
 import { bugSvgMap } from '../svg';
@@ -17,6 +17,11 @@ export default function BugDetail() {
   createEffect(() => {
     setBug(getBugById(params.id));
     markVisited(params.id);
+  });
+
+  onMount(() => {
+    // Scroll to top when navigating to a new bug
+    window.scrollTo(0, 0);
   });
 
   return (

@@ -720,3 +720,41 @@
     gap: 1rem;
   }
 }
+
+/* ===== Mobile Quiz FAB ===== */
+.quiz-fab {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .quiz-fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    font-size: 1.75rem;
+    text-decoration: none;
+    box-shadow: 0 4px 16px var(--shadow-hover);
+    z-index: 200;
+    animation: quiz-fab-pulse 2s ease-in-out infinite;
+  }
+}
+
+@keyframes quiz-fab-pulse {
+  0%,
+  100% {
+    box-shadow: 0 4px 16px var(--shadow-hover);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 6px 24px var(--shadow-hover);
+    transform: scale(1.08);
+  }
+}
